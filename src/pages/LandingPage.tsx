@@ -49,22 +49,6 @@ export function LandingPage() {
             }}>
                   {item}
                 </motion.a>)}
-              <motion.button className="text-sm font-bold text-[#EB0A1E] hover:text-[#C00015]" initial={{
-              opacity: 0,
-              y: -10
-            }} animate={{
-              opacity: 1,
-              y: 0
-            }} transition={{
-              delay: 0.3,
-              duration: 0.4
-            }} whileHover={{
-              scale: 1.05
-            }} whileTap={{
-              scale: 0.95
-            }}>
-                Login
-              </motion.button>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ export function UseCase() {
     once: true,
     margin: '-100px'
   });
+  const vehicleImageUrl = 'https://tse2.mm.bing.net/th/id/OIP.kXUmKzNLC7paIa_HcruULwHaDt?w=2000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3';
   const steps = ['Select GBP (£) as the currency', 'Enter vehicle price (e.g., £45,000)', 'Set current GBP to LKR rate', 'Enter engine capacity (2755 CC)', 'Instantly view full customs duty breakdown'];
   return <AnimatedSection background="gray">
       <div className="max-w-5xl mx-auto">
@@ -57,12 +58,12 @@ export function UseCase() {
             duration: 0.6,
             delay: 0.2
           }}>
-              <motion.div className="w-full aspect-video bg-gray-300 rounded-lg mb-4 flex items-center justify-center text-gray-500 font-medium" whileHover={{
+              <motion.div className="w-full aspect-video bg-gray-300 rounded-lg mb-4 overflow-hidden" whileHover={{
               scale: 1.05
             }} transition={{
               duration: 0.3
             }}>
-                Toyota Land Cruiser Prado
+                <img src={vehicleImageUrl} alt="Toyota Land Cruiser Prado" className="h-full w-full object-cover" loading="lazy" />
               </motion.div>
               <h3 className="text-xl font-bold text-gray-900">
                 Import from UK
