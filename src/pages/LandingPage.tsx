@@ -12,6 +12,7 @@ import { UseCase } from '../components/UseCase';
 import { Technology } from '../components/Technology';
 import { FutureEnhancements } from '../components/FutureEnhancements';
 import { CTA } from '../components/CTA';
+import logo from '../components/assets/carquoterlogo.png';
 export function LandingPage() {
   return <div className="min-h-screen bg-white font-sans text-gray-900">
       {/* Animated Navigation */}
@@ -25,13 +26,14 @@ export function LandingPage() {
     }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            <motion.div className="flex items-center" whileHover={{
+            <motion.div className="flex items-center gap-3" whileHover={{
             scale: 1.05
           }} transition={{
             duration: 0.2
           }}>
+              <img src={logo} alt="MotorDuty logo" className="h-8 w-auto" />
               <span className="text-2xl font-bold text-[#EB0A1E] tracking-tighter cursor-pointer">
-                CAR QUOTER
+                MotorDuty
               </span>
             </motion.div>
             <div className="hidden md:flex items-center space-x-8">
@@ -80,7 +82,7 @@ export function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <span className="text-xl font-bold tracking-tighter">
-              CAR QUOTER
+              MotorDuty
             </span>
             <p className="text-sm text-gray-400 mt-1">
               © 2024 Vehicle Import Calculator. All rights reserved.
