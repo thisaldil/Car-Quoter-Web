@@ -1,13 +1,14 @@
-# 🚀 [Project Name]
+# 🎨 [Project Name]
 
-> [One-line description — what it does and who it's for]
+> [One-line description — what it does, who it's for, and why it matters]
 
 ![Project Banner](./screenshots/banner.png)
-<!-- Tip: a 1280x640px screenshot of your app's hero/dashboard works great as a banner -->
+<!-- Tip: 1280×640px screenshot of your app's main view works best as a banner -->
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](YOUR_DEPLOYED_URL_HERE)
-[![API Docs](https://img.shields.io/badge/API%20Docs-Postman-orange?style=for-the-badge)](YOUR_POSTMAN_COLLECTION_URL_HERE)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](YOUR_GITHUB_REPO_URL_HERE)
+[![Figma](https://img.shields.io/badge/Figma-Design-purple?style=for-the-badge&logo=figma)](YOUR_FIGMA_URL_HERE)
+<!-- Remove the Figma badge if you don't have a design file -->
 
 ---
 
@@ -19,7 +20,6 @@
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Environment Variables](#environment-variables)
-- [API Endpoints](#api-endpoints)
 - [Deployment](#deployment)
 - [Author](#author)
 
@@ -27,10 +27,10 @@
 
 ## 🧭 Overview
 
-[Write 3–5 sentences here. What problem does this solve? Who uses it? What makes it different from a basic CRUD app? Be specific about real-world value.]
+[Write 3–5 sentences here. What problem does this UI solve? Who is the target user? What makes the experience stand out? If it connects to a backend API, mention it briefly here.]
 
 **Live URL:** [https://your-app.vercel.app](https://your-app.vercel.app)  
-**Backend API:** [https://your-api.onrender.com](https://your-api.onrender.com)
+**Backend API (if applicable):** [https://your-api.onrender.com](https://your-api.onrender.com)
 
 ---
 
@@ -38,54 +38,53 @@
 
 ### Home / Landing Page
 ![Home Page](./screenshots/home.png)
-<!-- Replace with your actual screenshot path -->
 
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+### [Main Feature — e.g. Dashboard / Product Page / Feed]
+![Main Feature](./screenshots/main-feature.png)
 
-### [Key Feature — e.g. Product Listing / User Profile / Order Flow]
-![Feature Screenshot](./screenshots/feature-1.png)
+### [Secondary Feature — e.g. Login / Form / Modal]
+![Secondary Feature](./screenshots/secondary-feature.png)
 
-### Mobile View
+### Mobile / Responsive View
 ![Mobile View](./screenshots/mobile.png)
-<!-- Optional but impressive — shows you think responsively -->
 
-> 📁 Add all screenshots to a `/screenshots` folder in your repo root.
+### Dark Mode (if applicable)
+![Dark Mode](./screenshots/dark-mode.png)
+<!-- Remove this section if your app doesn't have dark mode -->
+
+> 📁 Add all screenshots to a `/screenshots` folder in your repo root.  
+> Tools to capture clean screenshots: [Screely](https://screely.com), [Cleanshot X](https://cleanshot.com), or browser DevTools device mode.
 
 ---
 
 ## ✨ Features
 
-### 👤 User
-- [ ] [Feature 1 — e.g. Register and log in with JWT authentication]
-- [ ] [Feature 2 — e.g. View and manage personal profile]
-- [ ] [Feature 3]
-- [ ] [Feature 4]
-
-### 🛠️ Admin
-- [ ] [Admin Feature 1 — e.g. Full CRUD on products/users]
-- [ ] [Admin Feature 2 — e.g. Dashboard with analytics]
-- [ ] [Admin Feature 3]
-
-### ⚙️ System
-- [ ] Role-based access control (e.g. User / Admin)
-- [ ] JWT authentication with secure HTTP-only cookies
-- [ ] Input validation and error handling
-- [ ] [Any other system-level feature — e.g. Email notifications, file uploads, pagination]
+- [ ] [Feature 1 — e.g. Fully responsive layout across mobile, tablet, and desktop]
+- [ ] [Feature 2 — e.g. Dynamic search and filter with instant results]
+- [ ] [Feature 3 — e.g. JWT-based authentication with protected routes]
+- [ ] [Feature 4 — e.g. Smooth page transitions and loading states]
+- [ ] [Feature 5 — e.g. Form validation with real-time error feedback]
+- [ ] [Feature 6 — e.g. Dark / light mode toggle with localStorage persistence]
+- [ ] [Feature 7 — e.g. Infinite scroll / pagination]
+- [ ] [Feature 8 — e.g. Toast notifications for user actions]
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer        | Technology                          |
-|--------------|--------------------------------------|
-| Frontend     | React.js, [Tailwind CSS / Bootstrap / MUI] |
-| Backend      | Node.js, Express.js                 |
-| Database     | MongoDB, Mongoose ODM               |
-| Auth         | JWT, bcrypt                         |
-| File Upload  | [Multer / Cloudinary — if used]     |
-| Deployment   | [Vercel / Render / Railway / AWS]   |
-| Other        | [Any other lib — e.g. Nodemailer, Socket.io, dotenv] |
+| Category       | Technology                                           |
+|----------------|------------------------------------------------------|
+| Framework      | [React.js / Vite / Next.js / Vanilla JS]             |
+| Language       | JavaScript (ES6+) / TypeScript                       |
+| Styling        | [Tailwind CSS / CSS Modules / Bootstrap / MUI]       |
+| State Management | [React Context / Redux Toolkit / Zustand]          |
+| Routing        | [React Router v6 / Next.js App Router]               |
+| HTTP Client    | [Axios / Fetch API]                                  |
+| Icons          | [React Icons / Lucide / Font Awesome]                |
+| Animation      | [Framer Motion / GSAP / CSS transitions]             |
+| Build Tool     | [Vite / Create React App / Webpack]                  |
+| Deployment     | [Vercel / Netlify / GitHub Pages]                    |
+| Other          | [Any other lib — e.g. Chart.js, React Hook Form, date-fns] |
 
 ---
 
@@ -93,11 +92,8 @@
 
 ### Prerequisites
 
-Make sure you have these installed:
-
 - [Node.js](https://nodejs.org/) v18+
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- [MongoDB](https://www.mongodb.com/) (local) or a [MongoDB Atlas](https://www.mongodb.com/atlas) account
 - [Git](https://git-scm.com/)
 
 ---
@@ -111,175 +107,76 @@ cd YOUR_REPO_NAME
 
 ---
 
-### 2. Set Up the Backend
+### 2. Install Dependencies
 
 ```bash
-cd backend
 npm install
+# or
+yarn install
 ```
-
-Create a `.env` file in the `/backend` directory (see [Environment Variables](#environment-variables) below), then:
-
-```bash
-# Development (with auto-restart)
-npm run dev
-
-# Production
-npm start
-```
-
-Backend runs on: `http://localhost:YOUR_PORT`
 
 ---
 
-### 3. Set Up the Frontend
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root directory (see [Environment Variables](#environment-variables) below).
+
+---
+
+### 4. Start the Development Server
 
 ```bash
-cd ../frontend
-npm install
 npm run dev
+# or
+yarn dev
 ```
 
-Frontend runs on: `http://localhost:5173`
+App runs on: `http://localhost:5173`
+
+---
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ---
 
 ## 🔐 Environment Variables
 
-Create a `.env` file inside `/backend`:
+Create a `.env` file in the project root:
 
 ```env
-PORT=YOUR_PORT
-NODE_ENV=development
+# API Base URL
+VITE_API_BASE_URL=http://localhost:YOUR_BACKEND_PORT/api/v1
+# For production:
+# VITE_API_BASE_URL=https://your-api.onrender.com/api/v1
 
-# MongoDB
-MONGO_URI=your_mongodb_connection_string
+# Firebase (if used)
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
 
-# JWT
-JWT_SECRET=your_jwt_secret_key
-JWT_EXPIRES_IN=7d
+# Google OAuth (if used)
+VITE_GOOGLE_CLIENT_ID=your_google_client_id
 
-# Cloudinary (if used)
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+# Cloudinary (if used for direct upload from frontend)
+VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
+VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
 
-# Email (if used)
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-
-# Add any other keys your project uses
+# Add any other public keys your project uses
+# Note: NEVER put secret keys here — frontend env vars are public
 ```
 
-> ⚠️ Never commit your `.env` file. It is already listed in `.gitignore`.
-
----
-
-## 🔌 API Endpoints
-
-**Base URL:** `http://localhost:YOUR_PORT/api/v1`  
-**Postman Collection:** [View on Postman](YOUR_POSTMAN_COLLECTION_URL_HERE)
-
----
-
-### Auth Routes — `/api/v1/auth`
-
-| Method | Endpoint    | Description         | Access |
-|--------|-------------|---------------------|--------|
-| POST   | `/register` | Register a new user | Public |
-| POST   | `/login`    | Login and get token | Public |
-| POST   | `/logout`   | Logout user         | Auth   |
-
----
-
-### [Resource 1] Routes — `/api/v1/[resource]`
-
-> Replace `[resource]` with your actual resource (e.g. `users`, `products`, `orders`)
-
-| Method | Endpoint  | Description          | Access |
-|--------|-----------|----------------------|--------|
-| GET    | `/`       | Get all [resources]  | Public / Auth |
-| GET    | `/:id`    | Get single [resource]| Public / Auth |
-| POST   | `/`       | Create [resource]    | Admin  |
-| PUT    | `/:id`    | Update [resource]    | Admin  |
-| DELETE | `/:id`    | Delete [resource]    | Admin  |
-
----
-
-### [Resource 2] Routes — `/api/v1/[resource2]`
-
-| Method | Endpoint  | Description          | Access |
-|--------|-----------|----------------------|--------|
-| GET    | `/`       | [Description]        | Auth   |
-| POST   | `/`       | [Description]        | Auth   |
-
----
-
-### Request & Response Examples
-
-**POST** `/api/v1/auth/register`
-
-```json
-// Request body
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "securepassword123"
-}
-
-// Response
-{
-  "success": true,
-  "message": "User registered successfully",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-}
-```
-
-> Add more examples for your key endpoints here.
-
----
-
-### Authentication Header
-
-Protected routes require a Bearer token:
-
-```
-Authorization: Bearer <your_jwt_token>
-```
-
----
-
-## 🚀 Deployment
-
-### Frontend — Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-1. Push your frontend to GitHub
-2. Import the repo on [vercel.com](https://vercel.com)
-3. Set environment variables in the Vercel dashboard
-4. Deploy
-
-**Live Frontend:** [https://your-app.vercel.app](https://your-app.vercel.app)
-
----
-
-### Backend — Render / Railway
-
-1. Push your backend to GitHub
-2. Create a new Web Service on [render.com](https://render.com) or [railway.app](https://railway.app)
-3. Set all environment variables
-4. Set build command: `npm install` and start command: `npm start`
-
-**Live API:** [https://your-api.onrender.com](https://your-api.onrender.com)
-
----
-
-### Database — MongoDB Atlas
-
-1. Create a free cluster on [mongodb.com/atlas](https://www.mongodb.com/atlas)
-2. Whitelist `0.0.0.0/0` for deployment access
-3. Copy the connection string into your `MONGO_URI` env variable
+> ⚠️ Only use `VITE_` prefix for Vite projects. For Create React App use `REACT_APP_` instead.  
+> ⚠️ Never put secret API keys in frontend `.env` — these are exposed in the browser.
 
 ---
 
@@ -287,46 +184,90 @@ Authorization: Bearer <your_jwt_token>
 
 ```
 root/
-├── backend/
-│   ├── config/
-│   │   └── db.js                  # Database connection
-│   ├── controllers/
-│   │   └── [resource]Controller.js
-│   ├── middlewares/
-│   │   ├── authMiddleware.js
-│   │   └── errorMiddleware.js
-│   ├── models/
-│   │   └── [Resource].js
-│   ├── routes/
-│   │   └── [resource]Routes.js
-│   ├── utils/
-│   │   └── [helpers].js
-│   ├── .env                       # Not committed
-│   ├── .gitignore
-│   ├── package.json
-│   └── server.js
+├── public/
+│   └── favicon.ico
 │
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── hooks/
-│   │   ├── context/               # or /store for Redux
-│   │   ├── services/              # API call functions
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── .env
-│   └── package.json
+├── src/
+│   ├── assets/               # Images, fonts, static files
+│   ├── components/           # Reusable UI components
+│   │   ├── common/           # Buttons, inputs, modals, etc.
+│   │   └── layout/           # Navbar, Footer, Sidebar
+│   ├── pages/                # Route-level page components
+│   ├── hooks/                # Custom React hooks
+│   ├── context/              # React Context providers
+│   │   └── [Name]Context.jsx
+│   ├── services/             # API call functions (axios/fetch)
+│   │   └── api.js
+│   ├── utils/                # Helper functions
+│   ├── constants/            # App-wide constants and config
+│   ├── styles/               # Global CSS or Tailwind config
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── screenshots/                   # UI screenshots for README
+├── screenshots/              # UI screenshots for README
 │   ├── banner.png
 │   ├── home.png
-│   ├── dashboard.png
+│   ├── main-feature.png
+│   ├── secondary-feature.png
 │   └── mobile.png
 │
+├── .env                      # Not committed
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js            # or next.config.js / webpack.config.js
 └── README.md
+```
+
+---
+
+## 🚀 Deployment
+
+### Vercel (Recommended for React / Next.js)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+1. Push your project to GitHub
+2. Import the repo on [vercel.com](https://vercel.com)
+3. Add environment variables in the Vercel dashboard under **Settings → Environment Variables**
+4. Set the build command: `npm run build`
+5. Set the output directory: `dist` (Vite) or `.next` (Next.js)
+6. Deploy ✅
+
+**Live URL:** [https://your-app.vercel.app](https://your-app.vercel.app)
+
+---
+
+### Netlify (Alternative)
+
+1. Push to GitHub
+2. Connect repo on [netlify.com](https://www.netlify.com)
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+5. Add env vars under **Site Settings → Environment Variables**
+
+---
+
+### GitHub Pages (for static / no backend projects)
+
+```bash
+npm install --save-dev gh-pages
+```
+
+Add to `package.json`:
+
+```json
+"homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+Then run:
+
+```bash
+npm run deploy
 ```
 
 ---
@@ -349,4 +290,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-> Built with ☕ and TypeScript by Thisal Gonsalkorala
+> Built with ☕ and attention to detail by Thisal Gonsalkorala
