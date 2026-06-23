@@ -6,7 +6,7 @@
 ![Project Banner](./screenshots/banner.png)
 <!-- Tip: 1280×640px screenshot of your app's main view works best as a banner -->
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](YOUR_DEPLOYED_URL_HERE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](https://motorduty.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](YOUR_GITHUB_REPO_URL_HERE)
 [![Figma](https://img.shields.io/badge/Figma-Design-purple?style=for-the-badge&logo=figma)](YOUR_FIGMA_URL_HERE)
 <!-- Remove the Figma badge if you don't have a design file -->
@@ -278,9 +278,9 @@ npm run deploy
 **Thisal Gonsalkorala**  
 Full-Stack Software Engineer
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat-square)](YOUR_PORTFOLIO_URL)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](YOUR_LINKEDIN_URL)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/YOUR_USERNAME)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat-square)](https://profile.thisalg.online/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/thisal-gonsalkorala/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/thisaldil)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:tdimith10@gmail.com)
 
 ---
