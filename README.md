@@ -1,6 +1,7 @@
-# 🎨 [Project Name]
+# 🎨 Car-Quoter-Web
 
-> [One-line description — what it does, who it's for, and why it matters]
+> A vehicle quotation and invoicing platform that enables businesses to generate professional quotations, automate invoice creation, and calculate taxes accurately. The system streamlines sales operations, improves financial record management, and provides a user-friendly interface for promoting automotive services online.
+
 
 ![Project Banner](./screenshots/banner.png)
 <!-- Tip: 1280×640px screenshot of your app's main view works best as a banner -->
