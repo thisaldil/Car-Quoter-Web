@@ -71,7 +71,11 @@ export function Hero() {
               </motion.p>
 
               <motion.div variants={itemVariants} className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start gap-4">
-                <Button size="lg" withArrow>
+                <Button
+                  size="lg"
+                  withArrow
+                  onClick={() => window.location.assign('https://car-quoter.vercel.app/')}
+                >
                   Get Started
                 </Button>
                 <Button variant="outline" size="lg">

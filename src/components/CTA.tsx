@@ -61,7 +61,11 @@ export function CTA() {
         delay: 0.6,
         duration: 0.6
       }}>
-          <Button size="lg" className="shadow-lg shadow-red-900/50">
+          <Button
+            size="lg"
+            className="shadow-lg shadow-red-900/50"
+            onClick={() => window.location.assign('https://car-quoter.vercel.app/')}
+          >
             Try the Calculator
           </Button>
         </motion.div>
